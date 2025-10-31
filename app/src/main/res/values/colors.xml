@@ -7,32 +7,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    
-    <!-- 壁纸应用主题颜色 -->
-    <color name="primary">#FF4285F4</color>
-    <color name="primary_variant">#FF1A73E8</color>
-    <color name="secondary">#FF34A853</color>
-    <color name="secondary_variant">#FF188038</color>
-    <color name="background">#FFF8F9FA</color>
-    <color name="surface">#FFFFFFFF</color>
-    <color name="error">#FFD93025</color>
-    <color name="on_primary">#FFFFFFFF</color>
-    <color name="on_secondary">#FFFFFFFF</color>
-    <color name="on_background">#FF202124</color>
-    <color name="on_surface">#FF202124</color>
-    <color name="on_error">#FFFFFFFF</color>
-    
-    <!-- 暗色主题颜色 -->
-    <color name="primary_dark">#FF8AB4F8</color>
-    <color name="primary_variant_dark">#FF669DF6</color>
-    <color name="secondary_dark">#FF81C995</color>
-    <color name="secondary_variant_dark">#FF5BB974</color>
-    <color name="background_dark">#FF202124</color>
-    <color name="surface_dark">#FF303134</color>
-    <color name="error_dark">#FFF28B82</color>
-    <color name="on_primary_dark">#FF202124</color>
-    <color name="on_secondary_dark">#FF202124</color>
-    <color name="on_background_dark">#FFE8EAED</color>
-    <color name="on_surface_dark">#FFE8EAED</color>
-    <color name="on_error_dark">#FF202124</color>
 </resources>

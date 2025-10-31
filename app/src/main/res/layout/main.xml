@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 现有内容保持不变，上方新增三个主操作按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <Button
+            android:id="@+id/btn_live_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="打开Live壁纸选择器"
+            android:onClick="openLivePicker" />
+        <Button
+            android:id="@+id/btn_image_wallpaper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="启用图片壁纸服务"
+            android:onClick="startImageWallpaper" />
+        <Button
+            android:id="@+id/btn_pager_demo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="为已有壁纸设置滤镜"
+            android:onClick="openPagerDemo" />
+    </LinearLayout>
+
+    <!--
+     match_parent 表示撑满父控件的大小
+     wrap_content 表示用内容撑满，但是不能超过父控件大小
+     id 用来在Java端获取控件对象
+     text 用来设置显示文字
+     textColor: 设置字体颜色 前两位表示透明度
+     textStyle: 字体风格normal（默认） bold 加粗 italic 斜体
+     background: 背景 可以是颜色，也可以是图片
+     gravity: 设置文本内容的显示位置：
+     shadowColor: 设置影音颜色，需要配合shadowRadius一起使用
+     singleLine:是否显示一行，超出显示内容区域会加省略号为三个点 过时可以用maxLine
+     ellipsize: 设置省略号显示的位置 marquee表示跑马灯
+     marqueeRepeatLimit="marquee_forever" 跑马灯动画执行次数，该值表示无线循环
+             android:focusable="true"
+        android:focusableInTouchMode="true" 跑马灯需要在获取焦点的状态下开始动画，需要一起设置该两个属性
+
+        android:clickable="true"用了这种办法的话需要在启动后点击才能运动开来跑马灯
+        或者通过自定义空间的方式重写 isFouced的方法来获取焦点
+        或者通过在空间内添加requestFocus的方法来获取焦点
+     -->
+</LinearLayout>

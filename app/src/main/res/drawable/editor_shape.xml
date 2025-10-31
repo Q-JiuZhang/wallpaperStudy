@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/purple_200" />
+    <!--        android:dashGap="10dp"
+    虚线的属性
+        android:dashWidth="20dp"-->
+    <stroke android:color="@color/white"
+        android:width="2dp"
+        />
+    <corners android:radius="10dp" />
+</shape>
+
+<!--
+
+ ShapeDrawable在Android开发中是一种非常有用的Drawable资源，它允许开发者通过XML定义各种形状（如矩形、圆形、线条、环形等），并可以为这些形状设置颜色、边框、圆角等样式。以下是ShapeDrawable的一些详细用途：
+
+1. 定义基本形状
+矩形：通过设置android:shape="rectangle"，可以定义一个矩形。矩形可以进一步通过corners属性来设置圆角。
+圆形：通过设置android:shape="oval"，可以定义一个圆形或椭圆形。椭圆的形状取决于其被赋予的控件大小。
+线条：通过设置android:shape="line"，可以定义一条线。线的宽度、颜色等样式可以通过stroke属性来设置。
+环形：通过设置android:shape="ring"，可以定义一个环形。环形通常用于制作进度条等UI元素。需要注意的是，使用环形时，通常需要设置android:useLevel="false"（在某些情况下）才能正确显示。
+2. 设置颜色和渐变
+纯色填充：通过solid标签，可以为形状设置纯色填充。
+颜色渐变：通过gradient标签，可以为形状设置颜色渐变效果。渐变类型可以是线性渐变（linear）、放射渐变（radial）或扫描式渐变（sweep）。渐变的方向、起始颜色、结束颜色等都可以通过相应的属性来设置。
+3. 设置边框
+通过stroke标签，可以为形状设置边框。边框的宽度、颜色、是否为虚线等都可以通过相应的属性来设置。
+4. 设置内边距
+通过padding标签，可以设置形状内容与其边界之间的内边距。这对于需要为形状内容留出空间的情况非常有用。
+5. 与布局和控件结合使用
+ShapeDrawable可以在XML布局文件中直接作为控件的背景使用，只需在控件的android:background属性中引用定义好的ShapeDrawable资源即可。
+也可以在Java代码中动态地将ShapeDrawable设置为控件的背景。
+6. 性能优化
+相比于使用图片作为背景，ShapeDrawable占用的内存更少，加载速度更快，有助于提升应用的性能。
+
+
+
+ -->
